@@ -1,0 +1,42 @@
+@import "compass/css3";
+
+body {
+  background: rgb(50,50,50);
+}
+
+div {
+  width: 20%;
+  min-width: 13em;
+  margin: 1em auto;
+}
+p {
+  font-family: helvetica;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.post-it-note {
+   padding: 2em;
+   background: yellow;
+   position: relative;
+   min-height: 10em;
+}
+.post-it-note:after {
+   content: "";
+   position: absolute;
+   bottom: -2em;
+   left: 0;
+   right: 2em;
+   border-width: 1em;
+   border-style: solid;
+   border-color: black;
+}
+.post-it-note:before {
+   content: "";
+   position: absolute;
+   bottom: -2em;
+   right: 0;
+   border-width: 2em 2em 0 0;
+   border-style: solid;
+   border-color: black;
+}
